@@ -6,7 +6,7 @@
 
 <br/>
 
-### **Team Memebers:**
+### **Team Members:**
 * Nimish Suri
 * Sree Vagdevi Kandukuri
 * Pardarshee Priya
