@@ -1,5 +1,5 @@
 # Airport Flight Control Simulator
-## Air Traffic Control system: organizes and regulates the process of landing aircraft at an airport. 
+## Organizes and regulates the process of landing aircraft at an airport. 
 
 #  Team 7: ARMOUR
 - - - -
