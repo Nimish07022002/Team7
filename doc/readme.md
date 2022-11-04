@@ -1,5 +1,14 @@
-# Spec Doc for Team 7
+#  Team 7: ARMOUR
 - - - -
+
+
+##Team Members:
+* Nimish Suri
+* Sree Vagdevi Kandukuri
+* Pardarshee Priya
+* Abhay Ojha
+* Akarsh Roy
+* Kumar Gaurav 
 
  ### Problem Statement:
  Picture Book Application
