@@ -87,6 +87,9 @@ helicopter), amount of fuel and distance.
 
 ## <ins>**EXTERNAL SPECIFICATION :**<ins/>
 <p>HTTP is used for client server communication.</p>
+ 
+ ## <ins>**TECHNICAL SPECIFICATION :**<ins/>
+<p>N/A</p>
 
 
 
