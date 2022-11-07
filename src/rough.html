@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="rough.js" defer></script>
+</head>
+
+<body>
+
+        <label for="">Name :</label><input autofill id="name" type="text"><br>
+        <label for="">Fuel :</label><input id="fuel" type="number"><br>
+        <label for="">Type :</label>
+        <select id="ptype" name="Ptype">
+            <option value="select" selected disabled hidden>Select</option>
+            <option value="plane1">plane1</option>
+            <option value="plane2">plane2</option>
+            <option value="plane3">plane3</option>
+        </select><br>
+        <label for="">Emergency</label>
+        <select id="etype" name="Etype">
+            <option value="select" selected disabled hidden>Select</option>
+            <option value="Medical">Medical</option>
+            <option value="Technical">Technical</option>
+        </select><br>
+        <button id="btn" onclick="submit()">Submit</button>
+
+
+</body>
+
+</html>

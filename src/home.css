@@ -1,0 +1,33 @@
+#left{
+    width: 70%;
+    float: left;
+    background-color: rgb(156, 219, 219);
+    height: 600px;
+}
+#right{
+    width: 30%;
+    float: left;
+    background-color: rgb(249, 225, 194);
+    height: 600px;
+}
+.plane{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    margin: 3% 0;
+    position: relative;
+}
+.plane p{
+    position: absolute;
+    top: -30px;
+    text-align: center;
+    width: 250px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    font-size: 12px;
+    border-radius: 10px;
+}
+.plane-area{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+}
