@@ -62,22 +62,22 @@
 
     <div id="manual">
         <div id="inp-form">
-            <label for="">Name :</label><input autofill id="name" type="text" required><br>
-            <label for="">Fuel :</label><input id="fuel" type="number" required><br>
-            <label for="">Type :</label>
-            <select id="ptype" name="Ptype" required>
-                <option value="select" selected disabled hidden>Select</option>
-                <option value="plane1">plane1</option>
-                <option value="plane2">plane2</option>
-                <option value="plane3">plane3</option>
-            </select><br>
-            <label for="">Emergency</label>
-            <select id="etype" name="Etype">
-                <option value="select" selected disabled hidden>Select</option>
-                <option value="Medical">Medical</option>
-                <option value="Technical">Technical</option>
-            </select><br>
-            <button id="btn" onclick="submit()">Submit</button>
+            <label for="">Name : <input autofill id="name" type="text" required></label><br>
+            <label for="">Fuel : &nbsp;&nbsp;<input id="fuel" type="number" required></label><br>
+            <label for="">Type :&nbsp
+                <select id="ptype" name="Ptype" required>
+                    <option value="select" selected disabled hidden>Select</option>
+                    <option value="plane1">plane1</option>
+                    <option value="plane2">plane2</option>
+                    <option value="plane3">plane3</option>
+                </select>
+            </label>
+            <br>
+            <label for="">Emergency : 
+                <input name="emergency" type="radio" value="Medical">Medical</input>&nbsp;&nbsp;
+                <input name="emergency" type="radio" value="Technical">Technical</input>
+            </label><br>
+            <button id="Generate" onclick="submit()">Generate</button><button id="Simulate" onclick="submit()">Simulate</button>
         </div>
     </div>
 
