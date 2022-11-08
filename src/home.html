@@ -5,36 +5,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
 
 <body>
+
     <h1 style="text-align: center;">Airport Flight Control Simulator</h1>
-    <div id="left">
-        <div class="plane-area">
-            <div id="plane1" class="plane first">
-                <p id="p1"></p>
-            </div>
-            <div id="plane2" class="plane second">
-                <p id="p1"></p>
-            </div>
-            <div id="plane3" class="plane first">
-                <p id="p2"></p>
-            </div>
-            <div id="plane4" class="plane second">
-                <p id="p1"></p>
-            </div>
-            <div id="plane5" class="plane first">
-                <p id="p3"></p>
-            </div>
-            <div id="plane6" class="plane second">
-                <p id="p1"></p>
-            </div>
+    <nav>
+        <button onclick="showHome()" id="btnhome">Home</button>
+        <button onclick="showManual()" id="btnmanual">Manual Simulator</button>
+        <button onclick="showAutomatic()" id="btnautomatic">Automatic Simulator</button>
+    </nav>
+
+    <!-- ******************************  Home  ****************************** -->
+
+    <div id="home">
+        <center>
+            <p id="home-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, cumque ipsam in totam
+                consectetur doloribus
+                culpa, aspernatur similique assumenda ut rerum. Officiis numquam, minus saepe reiciendis optio
+                cupiditate,
+                fugiat sapiente iusto, aut voluptas dignissimos illo facilis consequatur! Dignissimos esse libero iure
+                sit
+                ea! Modi quidem sint exercitationem beatae tenetur. Quisquam iste magni suscipit quos vitae facere
+                debitis
+                eos officia! Sed sequi veniam quasi? Fugit sit omnis debitis. Veniam quam in similique pariatur vel.
+                Expedita natus rem soluta architecto tenetur, accusamus sequi praesentium voluptatem, quibusdam unde
+                mollitia! Beatae, architecto, repellat fuga consequatur illum, inventore facilis quibusdam praesentium
+                itaque velit sapiente? Nemo ipsam nostrum quo quas unde aut, est vitae? Sapiente porro deleniti
+                consequatur
+                esse est nobis sunt dolorem assumenda dolores vel a eius magnam quaerat laborum ipsum quibusdam odio ex
+                labore harum, officia non! Reprehenderit fugit cupiditate tempore id non, cumque eos labore, dolor natus
+                quaerat ullam itaque error in optio! Optio similique error incidunt molestiae, velit dolore. Illum
+                excepturi
+                nihil ipsa itaque id eveniet possimus repellendus vitae, repudiandae veritatis provident error nulla!
+                Fuga
+                eligendi asperiores doloremque nostrum earum. Deleniti aperiam quis eligendi sapiente rem eum vel, ad
+                reprehenderit ratione animi, unde enim delectus accusamus. Iste a beatae saepe consequuntur ipsum
+                aliquid
+                excepturi rem consequatur dolore voluptatem, molestias labore totam necessitatibus quasi libero nam
+                laudantium maiores aut! Excepturi velit saepe tempore eius dicta corrupti dolore id nobis, porro vero
+                dignissimos veritatis nisi hic ad numquam quos incidunt eaque ipsam reiciendis ipsa. Recusandae nihil
+                aut
+                deleniti beatae minus sapiente at molestiae quas, mollitia corrupti consequuntur in eligendi maxime
+                blanditiis enim dignissimos praesentium sunt ut iusto. Enim, ipsum, consequatur, blanditiis ducimus
+                dicta
+                officiis modi veniam dolore obcaecati quidem nihil doloribus. Error eveniet eius adipisci consequuntur
+                dolor! Suscipit consequatur nesciunt, omnis esse, expedita inventore voluptatibus sunt praesentium,
+                maiores
+                tempore tenetur. Quibusdam tempora totam illum!</p>
+        </center>
+    </div>
+
+    <!-- ******************************  Manual  ****************************** -->
+
+    <div id="manual">
+        <div id="inp-form">
+            <label for="">Name :</label><input autofill id="name" type="text" required><br>
+            <label for="">Fuel :</label><input id="fuel" type="number" required><br>
+            <label for="">Type :</label>
+            <select id="ptype" name="Ptype" required>
+                <option value="select" selected disabled hidden>Select</option>
+                <option value="plane1">plane1</option>
+                <option value="plane2">plane2</option>
+                <option value="plane3">plane3</option>
+            </select><br>
+            <label for="">Emergency</label>
+            <select id="etype" name="Etype">
+                <option value="select" selected disabled hidden>Select</option>
+                <option value="Medical">Medical</option>
+                <option value="Technical">Technical</option>
+            </select><br>
+            <button id="btn" onclick="submit()">Submit</button>
         </div>
     </div>
-    <div id="right"></div>
-    <center><button style="padding: 5px; font-size:19px;" onclick="run()">Run</button></center>
+
+    <!-- ******************************  Automatic  ****************************** -->
+
+    <div id="automatic">
+        <div id="left">
+            <div class="plane-area">
+            </div>
+        </div>
+        <div id="right"></div>
+        <center><button style="padding: 5px; font-size:19px;" onclick="run()">Run</button></center>
+    </div>
+
+    <footer>
+        &copy; Copyrights Reserved
+    </footer>
+
     <script src="home.js"></script>
 </body>
 
