@@ -39,6 +39,7 @@ nav>button:hover {
 
 #automatic,
 #manual {
+    margin-top: 20%;
     display: none;
 }
 
@@ -53,10 +54,39 @@ footer {
 }
 
 /* **************************************************  Simulator Part  **************************************************  */
+#simulate{
+    display : none;
+}
 
-#left {}
+#simulate div{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    height: 200px;
+}
 
-#right {}
+#left {
+    width: 20%;
+    float: left;
+    background-color: rgb(182, 255, 255);
+}
+
+#right {
+    width: 20%;
+    float: left;
+    background-color: rgb(250, 191, 115);
+}
+
+#center {
+    width: 60%;
+    float: left;
+    background-color: rgb(228, 156, 169);
+
+}
+
+
+#lowerSection{
+    display: none;
+}
 
 .plane {
     background-color: red;
@@ -105,4 +135,20 @@ footer {
 }
 #Simulate{
     background-color: green;
+}
+.landed{
+    text-shadow: 2px 2px 5px green;
+}
+.crashed{
+    text-shadow: 2px 2px 5px red;
+}
+#plane-dt,th,td{
+    border: 1px solid black;
+}
+#plane-dt {
+    margin: 0 0 0 20px;
+    text-align: center;
+}
+#plane-dt td{
+ width: 100px;
 }

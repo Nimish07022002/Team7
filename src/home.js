@@ -55,16 +55,25 @@ function run() {
 
 const showHome = () => {
     document.getElementById('home').style.display = 'block'
+    document.getElementById('lowerSection').style.display = 'none'
     document.getElementById('manual').style.display = 'none'
     document.getElementById('automatic').style.display = 'none'
 }
 const showManual = () => {
     document.getElementById('home').style.display = 'none'
+    document.getElementById('lowerSection').style.display = 'block'
     document.getElementById('manual').style.display = 'block'
     document.getElementById('automatic').style.display = 'none'
 }
 const showAutomatic = () => {
     document.getElementById('home').style.display = 'none'
+    document.getElementById('lowerSection').style.display = 'block'
     document.getElementById('manual').style.display = 'none'
     document.getElementById('automatic').style.display = 'block'
 }
+
+
+
+
+
+
