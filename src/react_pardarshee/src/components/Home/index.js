@@ -1,7 +1,7 @@
 import {useState} from 'react';
 
 export default function Home() {
-  const [flightNumber, setFlightNumber] = useState(0);
+  const [flightNumber, setFlightNumber] = useState('');
   const [fuelAmount, setFuelAmount] = useState(0);
   const [planeType, setPlaneType] = useState('jet');
   const [distance, setDistance] = useState(0);
@@ -40,7 +40,9 @@ export default function Home() {
               type="number"
               id="fuel-amt"
               value={fuelAmount}
-              onChange={(evt) => setFuelAmount(evt.target.value)}
+              onChange={(evt) => {
+                if (evt.target.value >= 0) setFuelAmount(evt.target.value);
+              }}
             />{' '}
             <br />
             <br />
@@ -60,7 +62,9 @@ export default function Home() {
             <input
               type="number"
               value={distance}
-              onChange={(evt) => setDistance(evt.target.value)}
+              onChange={(evt) => {
+                if (evt.target.value >= 0) setDistance(evt.target.value);
+              }}
             />{' '}
             <br />
           </div>
