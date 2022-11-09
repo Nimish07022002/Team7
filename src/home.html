@@ -2,11 +2,14 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <title>Document</title>
+    <script src="home.js" defer></script>
+
 </head>
 
 <body>
@@ -57,20 +60,51 @@
                 tempore tenetur. Quibusdam tempora totam illum!</p>
         </center>
     </div>
-    <div id="lowerSection">
-        <div id="simulate">
-            <div id="left">
-                <h3>Holding Area</h3>
-            </div>
-            <div id="center">
-                <h3>Landing Area</h3>
-            </div>
-            <div id="right">
-                <h3>Airport</h3>
 
+    <!-- ******************************  Simulate Area  ****************************** -->
+
+    <div id="simulate">
+        <div id="left">
+            <h3>Holding Area</h3>
+        </div>
+        <div id="center">
+            <h3>Landing Area</h3>
+        </div>
+        <div id="right">
+            <h3>Airport</h3>
+
+        </div>
+    </div>
+
+    <div id="lowerSection">
+
+
+        <!-- ******************************  Manual  ****************************** -->
+
+        <div id="manual">
+            <div id="inp-form">
+                <label for="">Name : <input autofill id="name" type="text" required></label><br>
+                <label for="">Fuel : &nbsp;&nbsp;<input id="fuel" type="number" required></label><br>
+                <label for="">Type :&nbsp
+                    <select id="ptype" name="Ptype" required>
+                        <option value="select" selected disabled hidden>Select</option>
+                        <option value="plane1">plane1</option>
+                        <option value="plane2">plane2</option>
+                        <option value="plane3">plane3</option>
+                    </select>
+                </label>
+                <br>
+                <label for="">Emergency :
+                    <input name="emergency" type="radio" value="Medical">Medical</input>&nbsp;&nbsp;
+                    <input name="emergency" type="radio" value="Technical">Technical</input>
+                </label><br>
+                <button id="Generate" onclick="submit()">Generate</button><button id="Simulate"
+                    onclick="submit()">Simulate</button>
             </div>
         </div>
 
+        <!-- ******************************  Plane table  ****************************** -->
+        
         <table id="plane-dt">
             <tr>
                 <th>Name</th>
@@ -98,39 +132,13 @@
                 <td>landed</td>
             </tr>
         </table>
-    </div>
-    <!-- ******************************  Manual  ****************************** -->
 
-    <div id="manual">
-        <div id="inp-form">
-            <label for="">Name : <input autofill id="name" type="text" required></label><br>
-            <label for="">Fuel : &nbsp;&nbsp;<input id="fuel" type="number" required></label><br>
-            <label for="">Type :&nbsp
-                <select id="ptype" name="Ptype" required>
-                    <option value="select" selected disabled hidden>Select</option>
-                    <option value="plane1">plane1</option>
-                    <option value="plane2">plane2</option>
-                    <option value="plane3">plane3</option>
-                </select>
-            </label>
-            <br>
-            <label for="">Emergency :
-                <input name="emergency" type="radio" value="Medical">Medical</input>&nbsp;&nbsp;
-                <input name="emergency" type="radio" value="Technical">Technical</input>
-            </label><br>
-            <button id="Generate" onclick="submit()">Generate</button><button id="Simulate"
-                onclick="submit()">Simulate</button>
-        </div>
+
     </div>
 
     <!-- ******************************  Automatic  ****************************** -->
 
     <div id="automatic">
-        <div id="left">
-            <div class="plane-area">
-            </div>
-        </div>
-        <div id="right"></div>
         <center><button style="padding: 5px; font-size:19px;" onclick="run()">Run</button></center>
     </div>
 
@@ -138,7 +146,6 @@
         &copy; Copyrights Reserved
     </footer>
 
-    <script src="home.js"></script>
 </body>
 
 </html>

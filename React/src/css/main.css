@@ -11,9 +11,10 @@ nav {
     display: flex;
     height: 70px;
     justify-content: center;
+    align-items: center;
 }
 
-nav>button {
+nav>a {
     color: aliceblue;
     text-decoration: none;
     font-size: 22px;
@@ -22,7 +23,7 @@ nav>button {
     border: 0;
 }
 
-nav>button:hover {
+nav>a:hover {
     text-shadow: 2px 2px 5px rgb(255, 0, 0);
     transition-duration: 0.2s;
     font-size: 25px;
@@ -39,7 +40,6 @@ nav>button:hover {
 }
 
 #automatic{
-    display: none;
 }
 
 #manual{
@@ -58,7 +58,6 @@ footer {
 
 /* **************************************************  Simulator Part  **************************************************  */
 #simulate{
-    display : none;
 }
 
 #simulate div{
@@ -88,7 +87,6 @@ footer {
 
 
 #lowerSection{
-    display: none;
     margin-bottom: 20%;
 }
 
