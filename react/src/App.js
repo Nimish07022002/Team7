@@ -1,20 +1,28 @@
-import Navbar from './components/Navbar';
-import {useState} from 'react';
-import Home from './components/Home';
+import { Header } from './components/header';
+import { Home } from './components/home';
+import { Automatic } from './components/automatic';
+import { Manual } from './components/manual';
+import { Footer } from './components/footer';
+import './css/main.css'
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+
 
 function App() {
-  const [isHome, setIsHome] = useState(true);
-  const [isAbout, setIsAbout] = useState(false);
-  const [isContact, setIsContact] = useState(false);
-
   return (
-    <div className="App w-screen h-screen">
-      <Navbar {...{setIsHome, setIsAbout, setIsContact}} />
-      <main className="flex h-[calc(100%-2rem)] w-full justify-evenly sticky">
-        {isHome && <Home />}
-        {/* {isAbout && <About />}
-        {isContact && <Contact />} */}
-      </main>
+    <div className="App">
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route exact path='/' element={<Home/>}></Route>
+          <Route exact path='/manual' element={<Manual/>}></Route>
+          <Route exact path='/automatic' element={<Automatic/>}></Route>
+        </Routes>
+      </BrowserRouter>
+      <Footer></Footer>
     </div>
   );
 }
