@@ -1,0 +1,157 @@
+body {
+    margin: 0 auto;
+    background-color: rgb(129, 183, 185);
+}
+
+/* **************************************************  Home  **************************************************  */
+
+nav {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 22px;
+    background-color: inherit;
+    margin: 0 20px;
+    border: 0;
+}
+
+nav>a:hover {
+    text-shadow: 2px 2px 5px rgb(255, 0, 0);
+    transition-duration: 0.2s;
+    font-size: 25px;
+}
+
+#home-about {
+    width: 80%;
+    margin-top: 5%;
+    background-color: rgb(7, 53, 69);
+    padding: 1%;
+    border-radius: 25px;
+    border-left: 5px solid black;
+    color: rgb(255, 255, 255);
+}
+
+#automatic{
+}
+
+#manual{
+    margin-top: 38%;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    padding: 1% 0;
+}
+
+/* **************************************************  Simulator Part  **************************************************  */
+#simulate{
+}
+
+#simulate div{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    height: 500px;
+}
+
+#left {
+    width: 20%;
+    float: left;
+    background-color: rgb(182, 255, 255);
+}
+
+#right {
+    width: 20%;
+    float: left;
+    background-color: rgb(250, 191, 115);
+}
+
+#center {
+    width: 60%;
+    float: left;
+    background-color: rgb(228, 156, 169);
+
+}
+
+
+#lowerSection{
+    margin-bottom: 20%;
+}
+
+.plane {
+    background-color: red;
+    width: 20px;
+    height: 20px !important;
+    margin: 3% 0;
+    position: relative;
+}
+
+.plane p {
+    position: absolute;
+    top: -30px;
+    text-align: center;
+    width: 250px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    font-size: 12px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.plane-area {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+}
+/* **************************************************  Manual Part  **************************************************  */
+#inp-form{
+    padding: 2% 0 3% 2.5%;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 20%;
+    margin: -27% 0 0 6%;
+    position: absolute;
+    background-color: aquamarine;
+}
+#inp-form > button{
+    font-size: 17px;
+    size: 25px;
+    margin-left: 7%;
+    margin-top: 7%;
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+}
+#Generate{
+    background-color: blue;
+}
+#Simulate{
+    background-color: green;
+}
+.landed{
+    text-shadow: 2px 2px 5px green;
+}
+.crashed{
+    text-shadow: 2px 2px 5px red;
+}
+#plane-dt,th,td{
+    border: 1px solid black;
+}
+#plane-dt {
+    margin: 0 0 20% 64%;
+    text-align: center;
+}
+#plane-dt td{
+ width: 100px;
+}
