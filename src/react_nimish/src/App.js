@@ -3,6 +3,7 @@ import { Home } from './components/home';
 import { Automatic } from './components/automatic';
 import { Manual } from './components/manual';
 import { Footer } from './components/footer';
+import { Simulate } from './components/simulate';
 import './css/main.css'
 import {
   BrowserRouter,
@@ -17,12 +18,12 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route exact path='/' element={<Home/>}></Route>
-          <Route exact path='/manual' element={<Manual/>}></Route>
-          <Route exact path='/automatic' element={<Automatic/>}></Route>
+          <Route exact path='/' element={<Home />}></Route>
+          <Route exact path='/manual' element={<Manual Child={<Simulate/>}/>}></Route>
+          <Route exact path='/automatic' element={<Automatic Child={<Simulate/>}/>}></Route>
         </Routes>
       </BrowserRouter>
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 }

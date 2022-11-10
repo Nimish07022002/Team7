@@ -1,12 +1,11 @@
 import React from 'react'
-import { Simulate } from './simulate'
+// import { Simulate } from './simulate'
 
 
-export const Automatic = () => {
+export const Automatic = (props) => {
   return (
     <div>
-      <Simulate/>
-
+       {props.Child}
     </div>
   )
 }
