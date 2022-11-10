@@ -1,6 +1,6 @@
 body {
     margin: 0 auto;
-    background-color: cadetblue;
+    background-color: rgb(129, 183, 185);
 }
 
 /* **************************************************  Home  **************************************************  */
@@ -93,7 +93,7 @@ footer {
 .plane {
     background-color: red;
     width: 20px;
-    height: 20px;
+    height: 20px !important;
     margin: 3% 0;
     position: relative;
 }
@@ -107,6 +107,7 @@ footer {
     border: 1px solid black;
     font-size: 12px;
     border-radius: 10px;
+    font-weight: 600;
 }
 
 .plane-area {
@@ -119,7 +120,7 @@ footer {
     border: 1px solid black;
     border-radius: 25px;
     width: 20%;
-    margin: 1% 0 0 1%;
+    margin: -30% 0 0 13%;
     position: absolute;
     background-color: aquamarine;
 }
