@@ -1,23 +1,36 @@
 import React from 'react'
+// import { useEffect } from 'react'
 
 
-export const Simulate = () => {
+export const Simulate = ({ planes }) => {
 
+  // useEffect(() => {
+  //   console.log(planes)
+  // }, [planes])
+
+  let ps = document.querySelectorAll('.plane p')
+  planes.forEach((e,i)=>{
+    ps[i].innerText=`Name : ${planes[i]['name']} , fuel : ${planes[i]['fuel']} , Type : ${planes[i++]['type']}`
+    console.log(e)
+  })
   
+
   return (
+
     <div id="simulate">
+
       <div id="left">
         <h3>Holding Area</h3>
         <div className='plane-area'>
-          <div className='plane'>
-            <p>Name : a123, Type: Cargo, Emergency: YES</p>
-          </div><div className='plane'>
-            <p>Name : a124, Type: Passenger, Emergency: NO</p>
-          </div><div className='plane'>
-            <p>Name : a125, Type: Jet, Emergency: NO</p>
-          </div><div className='plane'>
-            <p>Name : a124, Type: Passenger, Emergency: NO</p>
-          </div>
+        <div className='plane'>
+            <p></p>
+          </div> <div className='plane'>
+            <p></p>
+          </div> <div className='plane'>
+            <p></p>
+          </div> <div className='plane'>
+            <p></p>
+          </div> 
         </div>
       </div>
       <div id="center">
@@ -27,7 +40,12 @@ export const Simulate = () => {
       <div id="right">
         <h3>Airport</h3>
       </div>
-     <br />
+      <br />
+
+
+
+
+
       <table id="plane-dt">
         <tbody>
           <tr>

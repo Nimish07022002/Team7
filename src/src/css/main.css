@@ -120,7 +120,7 @@ footer {
     border: 1px solid black;
     border-radius: 25px;
     width: 20%;
-    margin: -27% 0 0 6%;
+    margin: -20% 0 0 6%;
     position: absolute;
     background-color: aquamarine;
 }
@@ -149,7 +149,7 @@ footer {
     border: 1px solid black;
 }
 #plane-dt {
-    margin: 0 0 20% 64%;
+    margin: 0 0 13% 64%;
     text-align: center;
 }
 #plane-dt td{
