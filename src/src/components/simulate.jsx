@@ -5,15 +5,15 @@ import React from 'react'
 export const Simulate = ({ planes }) => {
 
   // useEffect(() => {
-  //   console.log(planes)
+    console.log(planes)
   // }, [planes])
 
   let ps = document.querySelectorAll('.plane p')
-  planes.forEach((e,i)=>{
-    ps[i].innerText=`Name : ${planes[i]['name']} , fuel : ${planes[i]['fuel']} , Type : ${planes[i++]['type']}`
+  planes.forEach((e, i) => {
+    ps[i].innerText = `Name : ${planes[i]['name']} , fuel : ${planes[i]['fuel']} , Type : ${planes[i++]['type']}`
     console.log(e)
   })
-  
+
 
   return (
 
@@ -22,7 +22,7 @@ export const Simulate = ({ planes }) => {
       <div id="left">
         <h3>Holding Area</h3>
         <div className='plane-area'>
-        <div className='plane'>
+          <div className='plane'>
             <p></p>
           </div> <div className='plane'>
             <p></p>
@@ -30,12 +30,12 @@ export const Simulate = ({ planes }) => {
             <p></p>
           </div> <div className='plane'>
             <p></p>
-          </div> 
+          </div>
         </div>
       </div>
       <div id="center">
         <h3>Landing Area</h3>
-        <hr style={{ marginTop: '40%', color: 'black', fontWeight: '800' }} />
+        {/* <hr style={{ marginTop: '40%', color: 'black', fontWeight: '800' }} /> */}
       </div>
       <div id="right">
         <h3>Airport</h3>
@@ -50,28 +50,23 @@ export const Simulate = ({ planes }) => {
         <tbody>
           <tr>
             <th>Name</th>
-            <th>Fuel left</th>
-            <th>Status</th>
+            <th>Milage(L/100 km)</th>
           </tr>
           <tr>
-            <td className="landed">Plane-1</td>
-            <td>45%</td>
-            <td>landed</td>
+            <td className="landed">JET</td>
+            <td>3.4</td>
           </tr>
           <tr>
-            <td className="crashed">Plane-2</td>
-            <td>15%</td>
-            <td>crashed</td>
+            <td className="landed">Cargo</td>
+            <td>5</td>
           </tr>
           <tr>
-            <td className="landed">Plane-3</td>
-            <td>55%</td>
-            <td>landed</td>
+            <td className="landed">Passenger</td>
+            <td>4.5</td>
           </tr>
           <tr>
-            <td className="landed">Plane-4</td>
-            <td>43.5%</td>
-            <td>landed</td>
+            <td className="landed">Raptor</td>
+            <td>3.99%</td>
           </tr>
         </tbody>
       </table>

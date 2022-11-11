@@ -20,7 +20,7 @@ export const Manual = () => {
     function frame() {
       console.log(`${i} plane is changing`)
       if (i < planes.length) {
-        if (width > 685) {
+        if (width > 2085) {
           i++
           width = 0
         }
@@ -61,9 +61,10 @@ export const Manual = () => {
         <label htmlFor="">Type :&nbsp;
           <select onChange={(e) => setType(e.target.value)} id="ptype" name="Ptype" required>
             <option value="select">Select</option>
-            <option value="plane1">plane1</option>
-            <option value="plane2">plane2</option>
-            <option value="plane3">plane3</option>
+            <option value="plane1">JET</option>
+            <option value="plane2">Cargo</option>
+            <option value="plane3">Passenger</option>
+            <option value="plane3">Raptor</option>
           </select>
         </label>
         <br />
